@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar </title>
+    <link rel="stylesheet" href="/bootstrap-5.1.0-dist/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <!-- css file  -->
+    <link rel="stylesheet" href="/Bootstrap/lec1.css">
+
+
+</head>
+
+<body>
+    <div id="main-top">
+        <div class="for-margin">
+            <div class="container-fluid">
+                <!--  do not apply margin or padding to this class  -->
+                <!-- navbar expand will make horizonatally not expend  -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="">Arun</a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <div class="mx-auto"></div> <!-- this line will shift content to right side  -->
+                        
+                            <ul class="navbar-nav">
+                                <!-- mx-auto helps to center the content -->
+                                <!-- ml-auto helps to shift content to right side  -->
+
+                                <li class="nav-item active "><a class="nav-link" href="#main-top">Home </a></li>
+                                <li class="nav-item "><a class="nav-link" href="#pricing">Pricing </a></li >
+                                 <!-- <li class="nav-item"><a class="nav-link" href="#cta">Download</a></li> -->
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+
+                                     <li class="nav-item "><a class="nav-link" href="#footer">Contact</a></li>
+                                     <!-- <li class="nav-item "><a class="nav-link" href="tel:9116016932">Call</a></li> -->
+                                
+                            </ul>
+
+                        </div>
+                </nav>
+
+
+
+                <div id="title-2">
+
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <h2>Hi, this is my personal website here u will get all the information about me</h2>
+
+                            <button type="button" class="btn btn-dark btn-lg"><i class="fab fa-apple"></i>
+                                Apple</button>
+                            <!-- https://fontawesome.com/ -->
+                            <button type="button" class="btn btn-outline-light btn-lg"><i
+                                    class="fab fa-google-play"></i>Play store</button>
+
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <img src="/Bootstrap/WhatsApp Image 2021-08-24 at 1.19.32 PM.jpeg" class="title-image"
+                                alt="Aruns image " height="200px" width="200px">
+                            <!-- <h2 style="font-family: 'Klee One', cursive;">Hi, I'm Arun</h2> -->
+                        </div>
+
+                    </div>
+
+                    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maiores et eos ducimus
+                        iste enim eum accusamus dolorum dolorem aut aspernatur, suscipit necessitatibus voluptatem odit
+                        rem perferendis repellat sapiente magni!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="row">
+            <div class="section-box col-lg-4 col-sm-12">
+                <i class="fas fa-shield-alt fa-4x"></i>
+                <h3>Easy to use </h3>
+                <p>This site is Easy to use u can easily visit all the things that u want </p>
+            </div>
+
+            <div class="section-box col-lg-4">
+                <i class="fas fa-shield-check fa-4x "></i>
+                <h3>Security ++ </h3>
+                <p>This site is Easy to use u can easily visit all the things that u want </p>
+            </div>
+
+            <div class="section-box col-lg-4">
+                <i class="fas fa-shield-alt fa-4x"></i>
+                <h3> Comfortable </h3>
+                <p>This site is Easy to use u can easily visit all the things that </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="testimonial">
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carosel" data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active" ">
+            <h2>Here i will write more about myself so that everyone can get who i am and what i am doing now for this i need some more space to write all the data that is present in my mind. </h2>
+            <img src=" /Bootstrap/WhatsApp Image 2021-08-24 at 1.19.32 PM.jpeg" alt="Aruns image "
+                    height="200px width=" 200px">
+                </div>
+
+                <div class="carousel-item">
+                    <h2>Here we will se how the slide is changing with the bootstrap property</h2>
+                    <img src="/Bootstrap/WhatsApp Image 2021-08-24 at 1.19.32 PM.jpeg" alt="Aruns image "
+                        height="200px width=" 200px">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+    </div>
+
+    <div id="pricing">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 style="color: black;">pricing</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>1.price of 1st item is 10</p>
+                        <p>1.price of 2nd item is 20</p>
+                        <p>3.price of 3rd item is 30</p>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Sign up</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 style="color: black;">pricing</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>1.price of 1st item is 10</p>
+                        <p>1.price of 2nd item is 20</p>
+                        <p>3.price of 3rd item is 30</p>
+                        <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign up</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 style="color: black;">pricing</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>1.price of 1st item is 10</p>
+                        <p>1.price of 2nd item is 20</p>
+                        <p>3.price of 3rd item is 30</p>
+                        <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign up</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section id="cta">
+        <h2 class="cta-h2">Here , i will generate buttons</h2>
+        <button type="button" class="btn btn-dark btn-lg"><i class="fab fa-apple"></i> Apple</button>
+
+        <button type="button" class="btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i>Play
+            store</button>
+    </section>
+
+
+    <div id="footer">
+        <ul class="foot">
+            <li>
+                <a href=""><i class="social-icon fab fa-instagram fa-2x"></i></a>
+            </li>
+            <li><a href=""><i class="social-icon far fa-envelope fa-2x"></i></a></li>
+        </ul>
+        
+
+    </div>
+
+</body>
+ 
+ 
+
+</html>

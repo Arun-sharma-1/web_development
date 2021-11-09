@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const age=8
+        isoldenough = age>=18
+        yr=18-age
+
+        // if(age>=18){} 
+        if(isoldenough)  console.log('arun now u can drive ...')
+        else console.log(`you have to wait for ${yr} years`)
+/*
+1)  This will create problem we have to decalare century outside the if statement and the reassign it
+2)  Do not declare variable inside if else statement 
+
+        const birthyear=2001
+        if(birthyear <= 2000)
+        {
+            let century=20
+        }
+        else
+        {
+            let century=21
+        }
+        console.log(century)*/
+
+        const birthyear=2001
+        let century;
+        if(birthyear <= 2000)
+        {
+            century=20
+        }
+        else
+        {
+            century=21
+        }
+        console.log(century)
+
+
+         
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

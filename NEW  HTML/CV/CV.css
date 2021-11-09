@@ -1,0 +1,27 @@
+.sec-img
+{
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    display: block; 
+    border-radius: 50%;
+    margin-top: -12vh;
+   
+} 
+#main-top
+{
+    background-color: bisque;
+}
+body
+{
+       background-repeat: no-repeat;
+    background-size: 100% 50%;
+    
+}
+@media (max-width:746px)
+{
+    .sec-img{
+        margin-top: 0vh;
+    }
+}

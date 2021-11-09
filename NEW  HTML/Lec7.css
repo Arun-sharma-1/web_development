@@ -1,0 +1,22 @@
+
+body {
+    background-color: aliceblue;
+     
+}
+h1{
+    color: #753422;
+    font-family: 'Courier New', Courier, monospace;
+}
+hr{
+    
+     
+    /* border-style: inset; */
+
+    /* border-style: none; */
+    /* border-top: dotted; */
+    border-style: dotted none none;
+    border-width: 4px;
+    width: 10%;
+   
+}
+ 

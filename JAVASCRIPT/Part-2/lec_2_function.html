@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function logger() {
+            console.log('hi my name is arun');
+        }
+        logger();
+        logger();
+        logger();
+
+        function fruitprocessor(apple, oranges) {
+            console.log(apple, oranges);
+            juice = `fruit of ${apple} apples and ${oranges} oranges`;
+            return juice;
+        }
+        const mixjuice = fruitprocessor(3, 4)
+        console.log(mixjuice)
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //FUNCTION Declaration =we can call function before decalartion but we can't call in function expression before declaration
+        age = 20
+        const result = calage1(2001);
+
+        function calage1(birthyear) {
+            return 2021 - birthyear;
+        }
+        console.log(result)
+
+
+        // FUNCTION WITHOUT NAME
+
+        //function expression
+
+        const calage = function (birthyear) {
+            return 2021 - age;
+        }
+
+        const res = calage(2001)
+        console.log(res)
+        console.log(calage(2001))
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        function describe_country(country , population , capital)
+        {
+            return `${country} has population over more than allmost all the country and capital of india is new delhi`
+        }
+        console.log(describe_country('india', 20000 , 'new delhi'))
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

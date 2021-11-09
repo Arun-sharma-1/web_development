@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container {
+            background-color: #fff;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            position: relative;
+            /* animation:  name = none will deactivate all its property ; */
+            animation-name: arun;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+              animation-iteration-count: infinite; /* alternate = stop in the begining after expanding */
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: ease-in; first slow than fast ,  ease- out = first fast than slow */
+            /* animation-timing-function: steps(5,jump-both); */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+
+            /* animation: animation name  , animation duration , animation timing function  , animation delay , animation iteration count  , animation fill mode; */
+            /* animation: arun 2s ease-in 1s 12 forwards;  all the properties in one line */
+
+        }
+
+        /* @keyframes arun
+        {
+            from
+            {
+                width: 200px;
+            }
+            to{
+                width: 400PX;
+            }
+        } */
+
+        @keyframes arun {
+            0% {
+                top: 0px;
+                left: 0px;
+
+            }
+
+            25% {
+                top: 0px;
+                left: 100px;
+
+            }
+
+            75% {
+                top: 100px;
+                left: 100px;
+
+
+            }
+
+            100% {
+                top: 100px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is My box.
+        </div>
+    </div>
+</body>
+
+</html>

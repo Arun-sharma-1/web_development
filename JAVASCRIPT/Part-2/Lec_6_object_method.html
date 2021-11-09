@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // There is no need of array to create objects
+        const arunArray = [
+            'arun',
+            'sharma',
+            2001,
+            'developer',
+            ['kushal', 'tarun', 'jitu', 'dhanesh'],
+            true
+        ];
+
+
+        const arun = {
+            firstname: 'arun',
+            lastname: 'sharma',
+            birthyear: 2001,
+            job: 'developer',
+            friend: ['kushal', 'tarun', 'jitu', 'dhanesh'],
+            hasdrivinglicense: false,
+
+            // here we need expression not declaration
+            // calage: function (birthyear) {
+            //     return 2021 - birthyear
+            // },
+
+            calage: function (  ) {
+                console.log(this)
+                return 2021 - this.birthyear
+            },
+
+            // calage: function (  ) {
+            //     this.age=2021 - this.birthyear
+            //     return this.age;
+            // },
+            getsummary:function()
+            {
+                return `${this.firstname} is ${this.calage()} years old and he has ${this.hasdrivinglicense? 'a': 'no'} driving license`;
+            }
+
+        };
+
+        console.log(arun.lastname)
+        // console.log(arun.calage(birthyear))
+        console.log(arun.calage())
+        debugger;
+        
+        console.log(arun['calage'](2001))
+        // console.log(this)
+
+        // arun is 20 years old and he has driving license
+
+        console.log(arun.getsummary())
+        // `${arun.firstname} is ${arun.calage()} years old and he has drivinglicense`
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //functions
+        agee=20
+        const calge1=function(birthyear)
+        {
+            return 2021-agee;
+        }
+        //arrow fn
+        const calage=birthyear=>2021-birthyear;
+        const age=calage(2001);
+        console.log(age)
+
+        //FUNCTION CALLING ANOTHER FUNCTION
+        function cutpieces(fruit)
+        {
+            return fruit*4;
+        }
+
+       function fruitprocessor(apple , oranges)
+        {
+            const applejuice=cutpieces(apple);
+            const orangejuice=cutpieces(oranges);
+            const juice=`juice of ${applejuice} apple pieces and ${orangejuice} orange pieces `;
+            // console.log(juice)  for printing this we have to return this
+            return juice
+        }
+
+        console.log(fruitprocessor(2,3));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

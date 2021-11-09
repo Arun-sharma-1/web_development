@@ -1,0 +1,71 @@
+body
+{
+    font-family: 'Klee One', cursive;
+}
+#top  
+{
+     
+    margin: 2% 10%;
+}
+.top-1
+{
+    text-align: center;
+     
+    display: inline;
+}
+.here
+{
+    padding: 50px;
+}
+.nav-items
+{
+    padding: 10px;
+}
+.fas
+{
+    position: fixed;
+    left: 40px;
+}
+.login
+{
+    font-weight: 600;
+    background-color: #726A95;
+    border-radius:30px ;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+}
+h2
+{
+    color: grey;
+    line-height: 2rem;
+    font-weight: 300;
+}
+.card
+{
+    border-radius: 15px;
+    border: 1px solid #E63E6D;
+}
+#mid  
+{
+    padding: 10px;
+    margin: 2% 10%;
+    text-align: center;
+}
+.carousel-inner
+{
+    height: 100px;
+}
+#mid-1 ,#mid-2
+{
+    margin: 2% 15%;
+    padding: 30px;
+    text-align: center;
+
+}
+.img-sta
+{
+    height: 90px;
+}
+ 
+ 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Forms</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 10px;
+            font-size: 10px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border: 2px solid black;
+            border-radius: 4px 4px ;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea{
+                width: 100%;
+                padding: 12px;
+                margin: 5px;
+                border: 2px solid black;
+                border-radius: 4px ;
+        }
+        fieldset{
+            background-color: #f2f2f2;
+            border: 2px solid black;
+            border-radius: 4px ;
+        }
+        input[type="submit"]
+        {
+            background-color: blanchedalmond;
+            width: 50%;
+            border: 4px solid black;
+            padding: 10px ;
+        }
+        button{
+            background-color: blanchedalmond;
+            width: 49%;
+            border: 4px solid black;
+            padding: 10px ;
+        
+        }
+    </style>
+</head>
+
+<body>
+      <header style="text-align: center;">
+           <h1> PAYMENT FORM</h1>
+      </header>
+      <hr> <br>
+    <form action="mailto:onlyforuse1211@gmail.com" method="POST" enctype="text/plain">
+        <p >
+            <label for="Name">Name:</label>
+              <input type="text" name="name" placeholder="Arun sharma" >
+        </p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male: <input type="radio" name="gender" id="">
+                Female: <input type="radio" name="gender" id="">
+                Other: <input type="radio" name="gender" id="">
+            </p>
+        </fieldset>
+        <p>
+            Address: <br> <textarea name="" id="" cols="50" rows="5"></textarea>
+        </p>
+        <div>
+            Email: <input type="email" name="email" id="email">
+        </div>
+        <p>
+            Pincode: <input type="number" name="number" id="" placeholder="332715">
+        </p>
+        <h2>Payment information</h2>
+        <p>
+            Card Type:
+            <select name="card_type" id="card_type">
+                <option value="">select a card type </option>
+                first value should be blank coz if value of present then without seleting any card it will go to server
+                automatically
+                <option value="visa">Visa </option>
+                <option value="mastercard">mastercard</option>
+                <option value="rupay">rupay</option>
+            </select>
+        </p>
+        <p>
+            card Number: <input type="number" name="numbers" id="numbers">
+        </p>
+        <p>
+            Expiration: <input type="date" name="date" id="date">
+        </p>
+        
+        <!-- <label for="">Submit:</label> -->
+        <!-- <input type="submit" value="submit "> -->
+        <p>
+            CVV: <input type="password" name="cvv" id="cvv">
+        </p>
+        <input type="submit" value= " Paynow ">  
+         <button type="reset">RESET</button>
+
+                 <label for="">Submit:</label> 
+        <input type="submit" value="submit ">
+
+    </form>
+
+    
+
+     <!-- <input type="file" name="" id=""> -->
+     <!-- <input type="file" name="" id="" accept=".pdf"> -->
+     <!-- <input type="time" name="" id=""> -->
+
+</body>
+
+</html>

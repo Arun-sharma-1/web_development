@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="name">Name</label>
+    <div>
+        <input type="text" name="" value="arun">
+    </div>
+    <div>
+        <h2>radio</h2>
+        <label for="myname">Male</label>
+        <input type="radio" name="myname">
+        <br>
+        <label for="myname">female</label>
+        <input type="radio" name="myname" id="">
+        <br>
+        <label for="myname">other</label>
+        <input type="radio" name="myname">
+    </div>
+
+    <div>
+        <h2>checkbox</h2>
+        <label for="my"> car</label>
+        <input type="checkbox" name="my">
+        <label for="my"> bike</label>
+        <input type="checkbox" name="my">
+        <label for="my"> plane</label>
+        <input type="checkbox" name="my">
+    </div>
+
+    <h2>LIST ITMES</h2>
+    <label for="1st color">colors</label>
+    <select name="colors" id="1st color">
+        <option value="green">green</option>
+        <option value="green">yellow</option>
+        <option value="green">red</option>
+    </select>
+    
+    <h2> MULTIPLE SELECT LIST ITMES</h2>
+    <label for="1subject">subjects</label>
+    <select name="subjects" id="1subject" multiple >
+        <option value="maths">maths</option>
+        <option value="cpp">cpp</option>
+        <option value="css">css</option>
+    </select>
+    <h2>list with default selected ITMES</h2>
+    <label for="defalut select"> defalut selected colors</label>
+    <select name="color" id="defalut select" multiple>  
+        <option value="green">green</option>
+        <option value="yellow"  selected >yellow </option>
+        <option value="red " selected >red</option> 
+        <!-- by the help of selected red will become the default value of colors -->
+        <!-- if we want to select multiple colour then we have to write multiple in select  -->
+    </select>
+
+    <h2>list with 2 selected ITMES</h2>
+    <label for="defalut select"> defalut selected colors</label>
+    <select name="color" id="defalut select"size="2" >  
+        <option value="green">green</option>
+        <option value="yellow"  >yellow </option>
+        <option value="red "  >red</option> 
+        <!-- size="2" is used to select 2 items,in one time only first 2 item will be displayed  -->
+       
+    </select>
+    
+    <h2>TEXT AREA </h2>
+    <label for="txtmessage">Message</label>
+    <textarea name="Message" id="txtmessage" cols="30" rows="5" maxlength="5" ></textarea>
+    <!-- maxlength is the mxm quantity of word that can be entered  -->
+    <h2>ALERT TYPE BUTTON </h2>
+    <label for="emails">E-mail id </label>
+    <input type="email" id="emails">
+    <button type="button" onclick="alert('everything is fine ')">Validate</button>
+    <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+</body>
+
+</html>

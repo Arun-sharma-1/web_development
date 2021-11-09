@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox </title>
+    <style>
+        .container
+        {
+            display: flex;
+            flex-wrap: wrap ;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* justify-content: space-around; */
+            /* default value is no-wrap in which width decreases  but flex-wrap:wrap; allow to take specified width  */
+            /* flex-wrap: wrap-reverse; */
+            height: 500px;
+            border: 2px solid red;
+             
+        }
+        .shift
+        {
+            padding: 10px;
+        }
+        /* .container
+        { */
+            /* height: 300px;
+            border: 2px solid  lightblue;
+            display: flex; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+
+              /* flex-wrap: wrap; for resposive  */
+              /* flex-wrap: wrap-reverse; */
+
+              /* justify-content: center; */
+              /* justify-content: space-around; */
+
+              /* align-items: flex-start; */
+              /* align-items: stretch; */
+              /* align-items: center; */
+         
+            
+        /* } */
+
+        .container div
+        {
+            height: 200px;
+            width: 400px;
+        }
+        .first
+        {
+             
+            border: 2px solid black;
+            margin: 10px;
+            flex:1;
+
+            /* order: 2; */
+            flex-direction: column;
+            /* flex-grow: 4; */
+
+              /* flex-grow: 3; when screen size will increse then fist will take 3 negative no are invalid */
+              /* flex-shrink: 3;   */
+            
+        }
+        .second
+        {
+            
+            border: 2px solid black;
+            margin: 10px;
+            flex: 1;
+            /* flex-grow: 1;  */
+            /* flex grow takes remaining space according to the proportion which we are giving  */
+            order: 1;
+        }
+        .third
+        {
+            
+            border: 2px solid black;
+            margin: 10px;
+            /* order: 3; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+        <h1>1st</h1>  
+        
+        </div>
+        <div class="second">
+            <h1>2nd</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis soluta non enim adipisci! Aperiam, omnis. Repellendus sed libero ex, quasi maxime quibusdam delectus vero quaerat beatae? Voluptates earum cum quo!
+            ore ipsa quas reiciendis voluptatem, sunt possimus debitis quam facilis sint tenetur molestias magnam minus cum ut veritatis recusandae? Tenetur doloremque mollitia nihil voluptates blanditiis repellendus. Iste, ducimus?\</p>
+        </div>
+        <!-- <div class="third"><h1>3rd</h1></div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let friend1='arun'
+        let friend2='arn'
+        let friend3='run'
+        //arrays
+        const friends=['arun', 'kushal', 'ravan']
+        console.log(friends)
+
+        const year=new Array(1,2,3,7)
+        console.log(year)
+        console.log(year[0])
+        console.log(friends[2])
+
+        console.log(year.length)
+        // we can store differnent value like string , number in array 
+        const differ_array=['arun', 2 ,'ravan' ,3.4 , 'complex ' ,year]
+        console.log(differ_array)
+        differ_array.unshift('first')
+        differ_array.push('new ');
+        differ_array.pop();
+        differ_array.shift()
+        console.log(differ_array)
+
+        console.log(differ_array.indexOf('ravan')) // find index of element
+        console.log(differ_array.reverse()) // reverse array
+        console.log(differ_array.includes('arun')) // check that element is present or not
+        // we can not get meanningful result in operation with array like + , -
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

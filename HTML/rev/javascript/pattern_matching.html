@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       pattern matching 
+    </title>
+</head>
+
+<body>
+    <p id="para1">
+    </p>
+    <p id="para2">
+
+    </p>
+    <button type="button" onclick="setText()">
+        Add Text
+    </button>
+    <script>
+        function setText() {
+            let str = "We are in class and working with HTML and CSS."
+            /*
+            length - property can be used to get the length of a string
+            */
+            document.getElementById('para1').innerHTML = str + "<br>" + "have " + str.length + " characters";
+            //document.getElementById('para2').innerHTML = searchText(str);
+
+          /*  searching the first and last occurance
+            var firstIndex = str.indexOf("and");
+            var lastIndex = str.lastIndexOf("and");
+            alert('First index: ' + firstIndex + "\n" + 'Last index ' + lastIndex);
+
+
+            case-insensitive search
+            var n=str.match(/AND/i);
+            alert(n);
+            case sensitive with all occurances 
+            var n=str.match(/AND/g);
+            alert(n);*/
+
+            // replace a string
+            str=str.replace(/and/i, "or");
+            alert(str);
+        }
+/*function searchText(str){
+        var str2 = str.search("working");
+        return str2;
+        }*/
+    </script>
+</body>
+
+</html>

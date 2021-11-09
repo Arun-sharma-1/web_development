@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        caption {
+            caption-side: top;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        #id1,
+        #id1 th,
+        #id1 td {
+            color: red;
+            /* border: 2px solid blue; */
+            border-collapse: collapse;
+            /* join bordr */
+            width: auto;
+            text-align: center;
+            padding: 10px;
+            /* background-color: lightseagreen; */
+            box-shadow: 0 0 10px black;
+        }
+
+        #id1 th {
+            border-top: 2px solid black;
+        }
+
+        #id1 td {
+            color: black;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+         #id1 {
+            border: 2px solid blue;
+            vertical-align: bottom; 
+        }
+        tr:nth-child(even){
+            background-color: lightblue;
+        }
+        tr:nth-child(odd){
+            background-color: lightgreen;
+        }
+        tr :hover{
+            background-color: lime;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="id1" class="center">
+        <thead>
+            <caption>
+                Details of student
+            </caption>
+            <tr>
+                <th>s1.no</th>
+                <th>Name</th>
+                <th>Section</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Arun</td>
+                <td>k29</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>rahul</td>
+                <td>k3y</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>jitu</td>
+                <td>k39
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem assumenda accusamus aliquam voluptate est sunt quod vero quaerat totam? Illo blanditiis dolore fugit voluptates, ratione quia tempore! Doloremque, odio commodi fugiat ut hic delectus mollitia dolor magnam quisquam alias nemo fuga numquam voluptatem et iste asperiores itaque! Laboriosam, cum?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, iusto beatae. Id mollitia possimus quas laborum ut veritatis ad sequi iure beatae delectus culpa impedit perspiciatis obcaecati, alias quo nihil nulla ipsa tenetur quibusdam? Unde vel quidem voluptatem dolor eligendi recusandae ut sapiente. Voluptas necessitatibus voluptatibus cupiditate obcaecati, voluptatem blanditiis!
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

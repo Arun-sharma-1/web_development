@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // const markArray = [
+        //     'mark miller',
+        //     80,
+        //     7
+        // ]
+
+        // const johnArray = [
+        //     'john smith',
+        //     78,
+        //     1.69
+        // ]
+        const mark = {
+            fullname: 'mark miller',
+            weight: 78,
+            height: 1.69,
+            calbmi: function () {
+                return this.weight / this.height ** 2;
+            }
+        }
+
+        const john = {
+            fullname: 'john smith',
+            weight: 92,
+            height: 1.95,
+            calbmi: function () {
+                return this.weight / this.height ** 2;
+            }
+
+        }
+        console.log(mark.calbmi());
+        console.log(john.calbmi());
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

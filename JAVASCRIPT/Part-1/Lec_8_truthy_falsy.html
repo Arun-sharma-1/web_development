@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy and fasly value </title>
+
+    <script>
+        console.log(Boolean(0));        //false
+        console.log(Boolean(undefined)) //false
+        console.log(Boolean('jonas'))   //true
+        console.log(Boolean({}));       //true
+        console.log(Boolean(''));       //false
+
+        let height;
+        if(height) console.log("this block will also run for negative values ")
+        else console.log('value contain 0')
+
+        // DIFFERENCE BETWEEN == AND ===
+
+        var age='18'
+        // == --> '18' = 18
+        // === , !==
+        if(age==18) console.log('this one is loose equality operator , this will perform coercion and change string to int for comparision')
+        if(age===18) console.log('this one is tight , this will not perform coercion ')
+    </script>
+</head>
+<body>
+    Falsy values
+    1.0
+    2.''
+    3.undefined
+    4.null
+    5.NaN
+</body>
+</html>

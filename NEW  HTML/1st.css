@@ -1,0 +1,231 @@
+*
+{
+    box-sizing: border-box;
+    text-size-adjust: inherit;
+    /* writing-mode: vertical-rl */
+    writing-mode: horizontal-tb;
+}
+ 
+ 
+.for-margin
+{
+    margin: 0% 10%;  
+    
+}
+
+  
+#main-top
+{
+    background-image: url('https://image.shutterstock.com/image-photo/black-plate-on-stone-background-600w-1729030255.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* background-attachment: fixed; */
+    background-position: center;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    padding-bottom: 300px;
+    /* display: flex; */
+    /* flex-grow: inherit; */
+    /* flex-wrap: wrap; */
+}
+ 
+.NAME
+{
+    font-family: 'Alumni Sans', sans-serif;
+    font-family: 'Ma Shan Zheng', cursive;
+    color: white;
+}
+.top-1 
+{
+    color: white;
+    width: 44%;
+    padding: 100px 10px 26px 10px;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+ 
+ 
+@media screen and  (max-width:1058px)
+{
+    .top-1
+    {
+        /* margin-left: 0px; */
+        width: 100%;
+    }
+}
+
+
+/* .nav-link:hover
+{
+    background-color: #D79771;
+} */
+
+
+a:link { color: blue; }          /* Unvisited links */
+a:visited { color: purple; }     /* Visited links */
+a:hover { background-color: #D79771; }  /* Hovered links */
+a:active {background-color: #fff; }
+.navbar-toggler
+{
+    background-color: #B5FFD9;
+    border-radius: 35%;
+}
+.my-name{
+    color: #FF8882;
+    font-size: 50px;
+
+}
+
+    /* skill section  */
+
+span
+{
+    margin-left: 15px;
+}
+#skill-section
+{
+    font-family: sans-serif;
+    list-style: none;
+    padding: 0;
+    background-color: bisque;
+    padding-bottom: 100px;
+
+}
+.skills
+{
+   
+    margin: 0% 15%;
+}
+.skills li
+{
+    margin: 20px 0;
+
+}
+.bar 
+{
+    background: white;
+    display:block;
+    /* give width and  display: inline-block ; or give dislpay-block */
+    height: 10px;
+    border: 1 px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #218727b3;
+}
+.html
+{
+    width: 80%;
+    background-color: #D79771;
+    animation: html 2s;
+}
+.css
+{
+    width: 70%;
+    background-color: rgba(135, 202, 223, 0.486);
+    animation: css 2s;
+}
+.cpp
+{
+    width: 80%;
+    background-color: coral;
+}
+.bar div
+{
+    height: 10px;
+}
+@keyframes html
+{
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 80%;
+    }
+}
+@keyframes css
+{
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 70%;
+    }
+}
+.img
+{
+    transition: .5s all;
+}
+@media (max-width:1500px)
+{
+     .img
+     {
+         height: 150px;
+         width: 48%;
+     }
+}
+
+    /* ABOUT */
+.about-rw
+{
+    margin: 7% 15%;
+}
+div h1{
+    text-align: center;
+    line-height: 2;
+    margin-top: 4%;
+     
+}
+.about-img
+{
+    width: 100%;
+    padding: 0% 4%;
+    animation-name: arun;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    transform-style: preserve-3d;
+    /* transition: all 1s ease-in-out; */
+    backface-visibility: hidden;
+    transform: perspective(2500px) rotateY(0);
+     
+
+}
+/* .about-img:hover
+{
+    transform: rotateY(180deg);
+    transform: translate(100px , 100px);
+    transform: skew(20deg);
+} */
+@keyframes arun {
+    0% {
+        transform: translateX(30deg);
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translate(0);
+    }
+
+     
+}
+@media(max-width:1058px)
+{
+    .about-img
+    {
+        width: 85%;
+        height: 90%;
+        align-items: center;
+        justify-content: center;
+         
+    }
+}
+ 
+    
+ 
+ 
+ 

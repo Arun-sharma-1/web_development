@@ -1,0 +1,76 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 2px solid black;
+    background-color: rgb(114, 204, 240);
+    width: 20em;
+    height: 20em;
+    margin-top: -9em;
+    margin-left: -12em;
+    display: grid;
+    grid-template-rows: 50px 1fr 40px;
+    grid-template-columns: 5em auto;
+    }
+    .text1{
+        grid-column: 1/span 2;
+    }
+     input[type=text],select{
+        text-align: right;
+         width: 100%;
+        margin:4px 0;
+        display: inline-block;
+         padding: 12px 20px; 
+        box-sizing: border-box;
+        color: red;
+    } 
+    .ope{
+        width: 5em;
+        height: 3em;
+        background-color: lightskyblue;
+        color: white;
+        font-size: 15px;
+        border-radius: 2px solid black;
+        }
+.ope2{
+    width: 5em;
+    height: 2.95em;
+            background-color: lightskyblue;
+            color: white;
+            font-size: 15px;
+            border-radius: 2px solid black;
+    }
+.Digits{
+    width: 5em; 
+    height: 5em;
+    background-color: salmon;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px solid black;
+    transition: 0.4s;
+}
+.Digits:hover{
+    background-color: wheat;
+    color: turquoise;
+}
+.last{
+    grid-column: 1/span 2;
+    }
+    
+    
+.clear{
+    width:60px;
+    height: 40px;
+    background-color: lightskyblue;
+    color: white;
+    font-size: 15px;
+    }
+    .clear:hover{
+        background-color: rgb(255, 223, 163);
+        color: turquoise;
+    }

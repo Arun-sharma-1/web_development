@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // order matter in array
+        const arunArray=[
+            'arun',
+            'sharma',
+                20,
+            'developer',
+            ['ravan','ram','nanu']
+        ];
+        // order dosen't matters in object
+        const arun={
+            firstname:'arun',
+            age: 20,
+            lastname:'sharma',
+            job:'developer',
+            friends:['ravan','ram','nanu']
+        };
+
+        console.log(arun);
+        console.log(arun.lastname);
+        console.log(arun['age'])
+    // we have two notation dot and bracket notation
+        const nameKey='name';
+        console.log(arun['first' +nameKey]) // in bracket notation we have to pass string 
+        console.log(arun['last' +nameKey])
+
+    // Difference between dot and breacket notation
+        let InterestedIn=prompt('what do you want to know about arun ?? firstname ,lastname, age,job or friends')
+        console.log(typeof prompt);
+        console.log(typeof InterestedIn)
+        console.log(InterestedIn)
+        //how to print that value 
+        // console.log(arun.InterestedIn) // this will not work
+        console.log(arun[InterestedIn])
+
+        if(arun[InterestedIn]) console.log(arun[InterestedIn])
+        else console.log("nothing like this is present ")
+
+    // How to add property in object
+    arun.location='shrimadhopur'
+    console.log(arun)
+    // arun has three friends and his best friend is 'nanu'
+    console.log(`${arun.firstname} has ${arun.friends.length} friends and his best friend is ${arun.friends[2]} `)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

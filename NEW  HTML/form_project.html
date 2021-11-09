@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> Project </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('https://image.freepik.com/free-vector/modern-mosaic-wallpaper-rose-gold-black_53876-58064.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* margin: 100px ; */
+        }
+
+        .navbar {
+            height: 238px;
+            width: auto;
+            border: 2px solid white;
+            /* text-align: center; */
+            font-size: 25px;
+            text-decoration: none;
+            /* padding: 10px ; */
+            margin-left: 100px;
+            margin-right: 100px;
+
+        }
+
+        .c-1 {
+            /* text-align: center; */
+            color: white;
+        }
+
+        .c-1:hover {
+            color: turquoise;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            float:right;
+             /* position: relative;
+             bottom: 60px; */
+             position: relative;
+             top: 0px;
+             right: 0px;
+             padding: 7px;
+        }
+
+        nav a:hover {
+            color: burlywood;
+            font-size: x-large;
+            cursor: pointer;
+        }
+
+        .logo{
+            height: 100px;
+            border-radius: 50%;
+            /* text-align: center; */
+            /* margin: auto; */
+            display: block;
+
+            /* width: 50%; */
+        }
+
+        .section {
+            color: white;
+            width: 351px;
+            height: 300px;
+            border: 2px solid white;
+            margin: auto;
+            margin-top: 20px;
+             
+        }
+        .section:hover{
+            background-color: black;
+            color: cadetblue;
+        }
+
+        #c {
+            width: 95%;
+        }
+
+        #a,
+        #b,
+        #c {
+            margin: 4px;
+        }
+
+        textarea {
+            width: 95%;
+            margin: 4px;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+ 
+            margin-right: 10px;
+            margin-left: 4px;
+            width: 96%;
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img class="logo" src="/NEW  HTML/logo.jpg" alt="">
+        <h1 class="c-1">Sabka bazar </h1>
+        <a href="#">Address</a>
+        <a href="#">Product</a>
+        <a href="#">Contact</a>
+        <a href="#">Home</a>
+         
+         
+         
+    </nav>
+    
+    <section class="section">
+        <h1 style="text-align: center; " >GET IN TOUCH</h1>
+        <input type="text" name="name " placeholder="Full Name " id="a">
+        <input type="email" name="" placeholder="Your Email" id="b" autocomplete="additional-name" required>
+        <!-- Autocomplete allows the browser to predict the value -->
+        <input type="text" name="subject" placeholder="subject" id="c">
+        <textarea name="" id="" cols="10" rows="7" placeholder="Your message to us "></textarea>
+        <input type="submit" value="Submit">
+    </section>
+
+
+
+</html>

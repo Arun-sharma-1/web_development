@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        TABLES
+    </title>
+
+    <style>
+        body {
+            margin: 8px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2px">
+        <!-- header part
+            body part -->
+        <thead>
+            <!-- rows will be part of body  -->
+            <tr>
+                <th>Name </th>
+                <th>roll. no</th>
+                <th>section</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arun</td>
+                <td>12008696</td>
+                <td>k20rg</td>
+            </tr>
+            <tr>
+                <td>Kushal</td>
+                <td>12008697</td>
+                <td>k20ts</td>
+            </tr>
+            <tr>
+                <td>priyanshu</td>
+                <td>12008698</td>
+                <td>k20st</td>
+            </tr>
+    </table>
+    <h2>TABLES WITH ROW SPAN </h2>
+
+
+    <table border="2px">
+        <!-- header part
+    body part -->
+        <thead>
+            <!-- rows will be part of body  -->
+            <tr>
+                <th>Name </th>
+                <th>roll. no</th>
+                <th>section</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arun</td>
+                <td>12008696</td>
+                <td>k20rg</td>
+            </tr>
+            <tr>
+                <td>Kushal</td>
+                <td>12008697</td>
+                <td rowspan="2"> k20ts</td>
+            </tr>
+            <tr>
+                <td>priyanshu</td>
+                <td>12008698</td>
+
+            </tr>
+            <tr>
+                <td>sita</td>
+                <td>12008696</td>
+                <td rowspan="2">k20rg</td>
+            </tr>
+            <tr>
+                <td>Gita</td>
+                <td>12008696</td>
+
+            </tr>
+    </table>
+
+    <h2>TABLES WITH COLSPAN</h2>
+    
+    <table border="2px">
+        <!-- header part
+            body part -->
+        <thead>
+            <!-- rows will be part of body  -->
+            <tr>
+                <th>Name </th>
+                <th>roll. no</th>
+                <th>section</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arun</td>
+                <td colspan="2" >12008696,K20RG</td>
+                <!-- <td>k20rg</td> -->
+            </tr>
+            <tr>
+                <td>Kushal</td>
+                <td>12008697</td>
+                <td>k20ts</td>
+            </tr>
+            <tr>
+                <td>priyanshu</td>
+                <td>12008698</td>
+                <td>k20st</td>
+            </tr>
+    </table>
+    </body>
+
+</html>

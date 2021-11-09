@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYPE CONVERSION AND COERCION</title>
+    <script>
+//  1) use Number at the place of int and float using int and float will create error
+        const inputyear='2001'
+        console.log(inputyear + 20)
+        console.log(Number(inputyear) +20)
+
+        console.log(Number('arun')) // NaN means Not a Number 
+        console.log(typeof NaN) // i    
+
+        console.log(String(20) ,20)
+
+        // TYPE corersion = it happen automatically
+        // + add two strings and the result will be typeof string
+        // - opertor perform same operation on string and Numbers
+        console.log('I AM '+ 20 + ' YEAR OLD ')
+        console.log('23'-'10')
+
+        console.log('23'-'10' -3)
+        console.log('23'+'10'+3)
+
+        console.log('20'*'2')
+        console.log('10' / '2')
+
+        console.log('20' > '2')
+
+        let n='1'+1;
+        n=n-1;
+        console.log(n)
+
+        x='23'+'10'+3
+        x='10'-'4'-'3'-2+5
+        console.log(typeof x)
+
+        console.log(2+3+4+'5' , '10'-'4'-'3'-2+5 , '10'-'4'-'3'-2+'5')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Specificity</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .life{
+            color: blue;
+
+        }
+        .life{
+            color: rgba(122, 122, 112, 0) !important;
+        }
+        div.drinks li{
+            color: tomato;
+
+        }
+        li.life{
+            color: hotpink;
+        }
+       .overflow{
+           width: 20px;
+           border: 2px solid black;
+           overflow: scroll;
+       }
+    </style>
+
+</head>
+<body>
+    <div class="drinks">
+        <ul>
+            <li>mountain drink</li>
+            <li class="life">fizz</li>
+            <li>pepsi</li>
+        </ul>
+    </div>
+<hr>
+        <div class="overflow">
+            OVERFLOW 
+        </div>
+        
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        text direction
+    </title>
+
+    <style>
+        p {
+            direction: rtl;
+            /* unicode-bidi:bidi-override;   */
+            /* 
+             direction:ltr;
+             unicode-bidi:bidi-override;   */
+            /* for reverse the sentence */
+            /* ltr is default mode in this unicode-bidi:  ; property not works  */
+            text-transform: uppercase;
+            text-indent: 50px;
+            word-spacing:34px;
+            /* word-spacing gives spaces word by word  */
+
+        }
+
+        ._ {
+            direction: inherit;
+            text-decoration: overline;
+
+            text-decoration: line-through;
+            text-decoration: none;
+            /* text-transform: capitalize; */
+            /* in capitalize first letter of word become capital */
+            /* text-indent: 50px;
+            The text-indent property specifies how much horizontal space text should be moved before the beginning of the first line of the text content of an element */
+            letter-spacing: 23px;
+            /* letter spacing gives space between each letter  */
+        }
+    </style>
+</head>
+
+<body style="direction: rtl;">
+    <p> in this we will know about new concept of css</p>
+    <p class="_"> text will appear according to the direction of its parent element</p>
+</body>
+
+</html>

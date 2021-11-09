@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Css selector</title>
+    <style>
+        /* li{
+              text-align: center;  
+            color: blue;
+        } */
+       
+        span.special,li.special{
+            color: orange;
+        }
+       li{
+           list-style: square;
+       }
+       h2+p{
+           font-size: large;
+           color: brown;
+       }
+       /* a{
+           text-decoration: none;
+       } */
+       a:hover{
+           color: chartreuse;
+           text-decoration: none;
+       }
+       body h2+p .special{
+     /* body k ander h2+p h usme jo special class h  */
+           color: rgb(152, 23, 238);
+           font-size: xx-large;
+           padding: 10px;
+       }
+       p #one {
+       
+           color: yellow;
+           font-size: xx-large;
+       }
+       li[class="special"]{
+           font-size: xx-large;
+       }
+       li[class="a"]{
+           color: blue;
+           font-size: xx-large;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        id and class selector
+    </header>
+    <p>This is the first line <span class="special">  that needs to visible </span> and contain <a href="/NEW  HTML/form.html"> Forms in html</a></p>
+    <h2>This is my first heading </h2>
+    <p> This is the second line <em class="special"> which also needs to visible </em></p>
+    <!-- <p > this p we will <span id="one"> use for id</span> </p> -->
+    <p> This is the second line <em id="one"> which also needs to visible </em></p>
+     
+        <ul>
+            <li class="special">1st</li>
+            <li class="a">2nd</li>
+            <li class="a b">3rd</li>
+            <li class="ab">4th</li>
+        </ul>
+      
+</body>
+</html>
