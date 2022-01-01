@@ -1,0 +1,10 @@
+/* RESPONSIVENESS  */
+@media (max-widht:795px)
+{
+     header
+     {
+         font-size: 50%;
+         letter-spacing: 50%;
+         background-color: green;
+     }
+}

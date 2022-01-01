@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.name {
+
+    color: #FFF;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 45px;
+
+    font-family: 'Zen Tokyo Zoo', cursive;
+    margin-left: 5rem;
+    animation-name: bounce;
+    animation-duration: 4s;
+    /* or: Xms */
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    /* or: normal */
+    animation-timing-function: ease-out;
+    /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    animation-fill-mode: forwards;
+    /* or: backwards, both, none */
+    transition: all 3s;
+
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    80% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 0.3rem;
+}
+
+.header {
+    background-color: #A3DA8D;
+    color: #181D31 !important;
+}
+
+.navbar-toggler {
+    width: 47px;
+    height: 34px;
+    background-color: #7eb444;
+}
+
+.navbar-toggler .line {
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #A3DA8D;
+    margin-bottom: 5px;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* cover up padding also  */
+}
+
+.home__content {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__bio {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 550;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    text-transform: capitalize
+}
+
+.about_animation {
+    animation-delay: 0.4s;
+}
+
+/* ABOUT SECTION  */
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, #d9a7c7, #fffcdc);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content_section {
+    float: left;
+    width: 55%;
+    height: 40vh;
+
+}
+
+.image-section {
+    float: right;
+    width: 35%;
+
+}
+
+.image-section img {
+    width: 100%;
+    height: 40%
+}
+
+.title h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Alfa Slab One', cursive;
+     
+
+}
+
+.content_section p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+
+
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 100px;
+    }
+
+    .content_section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: 2rem auto;
+    }
+
+     
+
+    .image-section {
+        float: none;
+        width: 100%;
+        display: block;
+        height: 50%;
+
+    }
+}

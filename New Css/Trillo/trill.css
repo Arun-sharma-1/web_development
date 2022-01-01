@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    /* background-color: #eb2f64; */
+    background-image: linear-gradient(to right bottom , #eb2f64, #e9f57d);
+    min-height: 100vh;
+    background-size: cover;
+}
+.container
+{
+    max-height: 120rem;
+    min-height: 50rem;
+    width: 70%;
+    margin: 8rem auto;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    background-color: lightgrey;
+}
+.header
+{
+    background-color: white;
+    height: 7rem;
+}
+
+.content{
+    display: flex;
+
+}
+.sidebar{
+    flex: 0 0 18%;
+    background-color: darkgrey;
+}
+.hotelview{
+    flex: 1;
+    background-color: darkkhaki;
+}

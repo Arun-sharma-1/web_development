@@ -1,0 +1,17 @@
+.container {
+    background-color: greenyellow;
+    padding: 0.1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.items {
+    width: auto;
+    height: 3rem;
+    padding: 3rem;
+    border: 1px solid green;
+    background-color: hotpink;
+    margin: 1rem;
+}

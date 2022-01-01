@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+
+header {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa0IQcpSmDwj_G6HM-8wO1lU-QAlyJ6vpzAw&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 98vh;
+    background-attachment: fixed;
+    /* margin: 0.2rem; */
+
+    clip-path: polygon(50% 0%, 100% 1%, 100% 74%, 50% 93%, 48% 92%, 0 74%, 0 0);
+}
+
+/* WAVY EFFECT  */
+
+ul {
+    display: flex;
+    border-bottom: 15px solid white;
+    width: 4rem;
+    border-radius: 4px;
+    border-bottom-width: 3px;
+}
+
+ul li {
+    list-style: none;
+    padding: 0.2rem;
+    margin: auto 0.1rem;
+    background-color: white;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    animation: bounce;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    border-bottom: 4px solid white;
+
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+ul li:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+ul li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+ul li:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+ul li:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.bouncing_ball {
+
+    color: white;
+    padding: 1rem;
+    margin: 3rem 9.5rem 1rem;
+
+}
+
+.name {
+    color: #ffd9e2;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: x-large;
+    padding-top: 2rem;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    margin-left: 5rem;
+    text-shadow: 0 0 0 transparent,
+        0 0 10px #ff003c,
+        0 0 20px rgba(255, 0, 60, 0.5),
+        0 0 40px #ff003c,
+        0 0 100px #ff003c,
+        0 0 200px #ff003c,
+        0 0 300px #ff003c,
+        0 0 500px #ff003c,
+        0 0 1000px #ff003c;
+    animation: animate 3s infinite alternate;
+}
+@keyframes animate {
+	40% {
+		opacity: 1;
+	}
+	42% {
+		opacity: 0.8;
+	}
+	43% {
+		opacity: 1;
+	}
+	45% {
+		opacity: 0.3;
+	}
+	46% {
+		opacity: 1;
+	}
+}
+
+.bio {
+    margin-top: 6rem;
+
+
+}
+
+.bio h2 {
+    text-transform: uppercase;
+
+}
+
+.bio_details {
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+}
+
+
+
+@keyframes bio {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bioo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+span::before {
+    content: "";
+    animation: bio infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    animation-duration: 4s;
+    transition: all 30s;
+    animation-delay: 1s;
+}
+
+@keyframes bio {
+    0% {
+        content: "Web Developer";
+        opacity: 0;
+        color: greenyellow;
+    }
+
+    100% {
+        content: "Coder";
+        color: greenyellow;
+
+    }
+
+}
